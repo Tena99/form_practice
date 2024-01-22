@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+fieldset {
+  padding: 10px;
+  border-radius: 15px;
+  width: 50%;
+  margin: 25px auto;
+}
+
+.text_input {
+  display: flex;
+  flex-direction: column;
+}
+
+.radio_wrapper {
+  margin-top: 10px;
+}
+
+.input_container,
+.radio_wrapper {
+  padding: 5px;
+}
+
+.ml-5 {
+  margin-left: 5px;
+}
+
+.radio_wrapper .input_container {
+  margin-right: 15px;
+}
+
+.radio_wrapper input[type="radio"] {
+  margin-right: 5px;
+}
+
+.text_input label {
+  margin-bottom: 5px;
+}
+
+.input_container input,
+.input_container select {
+  border-radius: 10px;
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.radio_wrapper {
+  display: flex;
+}
+
+.order_btn {
+  background: black;
+  color: white;
+  padding: 10px 25px;
+  border-radius: 10px;
+  border: none;
+  margin: 10px auto;
+  display: block;
+  width: 100%;
+}
+
+.order_btn:hover {
+  background-color: #383838;
+}

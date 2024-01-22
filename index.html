@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <form
+      action=" https://tmzhf4wztf.execute-api.eu-central-1.amazonaws.com/prod/formecho"
+    >
+      <fieldset>
+        <div class="input_container text_input">
+          <label for="name">Full name</label>
+          <input type="text" id="name" name="name" />
+        </div>
+
+        <div class="input_container text_input">
+          <label for="productSort">Sorte</label>
+          <select name="productSort" id="productSort">
+            <option value="Schokolade">Schokolade</option>
+            <option value="Stracciatela" selected>Stracciatela</option>
+            <option value="Vanille">Vanille</option>
+          </select>
+        </div>
+
+        <div class="radio_wrapper">
+          <div class="input_container">
+            <input type="radio" id="becher" name="productType" value="becher" />
+            <label for="becher">Becher</label>
+          </div>
+
+          <div class="input_container">
+            <input type="radio" id="waffel" name="productType" value="waffel" />
+            <label for="waffel">Waffel</label>
+          </div>
+        </div>
+
+        <div class="input_container ml-5">
+          <input
+            type="checkbox"
+            name="fastDelivery"
+            id="fastDelivery"
+            checked
+          />
+          <label for="fastDelivery">Schnelle Lieferung</label>
+        </div>
+
+        <button type="submit" class="order_btn">Jetzt Eis bestellen!</button>
+      </fieldset>
+    </form>
+  </body>
+</html>
